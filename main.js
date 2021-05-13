@@ -9,12 +9,12 @@ const {
 // 导入模块
 const window = require('./demo/window')
 
-const path = require('path')
+// const path = require('path')
 
 // 自动重载应用
-require('electron-reload')(__dirname, {
-    electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
-})
+// require('electron-reload')(__dirname, {
+//     electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
+// })
 
 
 // 绑定事件
