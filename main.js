@@ -3,7 +3,7 @@
 // ipcMain 主进程监听
 const {
     app,
-    BrowserWindow,
+    // BrowserWindow,
 } = require('electron')
 
 const path = require('path')
