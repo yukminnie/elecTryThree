@@ -19,5 +19,8 @@
   "homepage": "https://github.com/yukminnie/elecTryThree#readme",
   "devDependencies": {
     "electron": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0"
   }
 }
