@@ -1,6 +1,6 @@
 const {BrowserWindow} = require('electron')
 // 暂时设置成全局变量，防止垃圾回收
-let mainWindow
+let mainWindow,childWindow
 
 
 // 定义事件
@@ -16,8 +16,15 @@ const createWindow = () => {
 
         // 关闭窗口时进行的操作，和下面的 all-closed 和 activate 联系
         this.mainWindow.on('closed', () => {
-            win = null
+            this.mainWindow = null
         })
+
+        childWindow = new BrowserWindow({
+            width: 600,
+            height: 300
+        })
+
+        childWindow.loadURL(`file://${__dirname}/child_window.html`)
     }
 
 module.exports = { 
